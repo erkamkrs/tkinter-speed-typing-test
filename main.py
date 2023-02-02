@@ -136,23 +136,6 @@ def restart():
 # Re-place writing labels.
     reset_writing_labels()
 
-# Adding seconds to the label
-def add_second():
-    global seconds_passed
-    seconds_passed += 1
-    remaining_time_label.configure(text= f"{seconds_passed} Seconds")
-    if can_type:
-        root.after(1000, add_second)
-
-def keypress(event=None):
-    try:
-        if event.char.lower() == label_2.cget("text")[0].lower():
-            label_2.configure(text=label_2.cget("text")[1:])
-            label_1.configure(text=label_1.cget("text") + event.char.lower())
-            #  Adjust Next Letter Label
-            current_letter_label.configure(text=label_2.cget("text")[0])
-    except tkinter.TlcError:
-        pass
 
 
 
