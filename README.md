@@ -32,7 +32,7 @@ $ python3 -m pip3 install --upgrade pip
 ```
 ### Instructions
 * Open the project on any IDE
-* Run the app on IDE. The watermarked image will be saved it as "watermarked_image.png"
+* Run the app on IDE. 
 * Start game by either clicking on START button on the center of the GUI or simply by typing the random given words on the entry box.
 * After writing all 7 words in the entry box, click on CHECK ANSWER button to proceed. 
 * If there has been missing letters or typo try again.
